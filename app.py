@@ -7,7 +7,7 @@ counter = 0
  
 @app.route('/about')
 def hello():
-    return '<h3> Hello , Solntsev Vitaly!</h3>'
+    return '<h3> Hello, Solntsev Vitaly!</h3>'
 
 @app.route('/')
 def print_counter():
@@ -21,4 +21,4 @@ def add_count():
     return 'Counter: ' + str(counter)
  
 if __name__ == '__main__':
-    app.run(debug=True,host='127.0.0.1')
+    app.run(debug=True,host='0.0.0.0')
